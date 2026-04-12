@@ -400,8 +400,13 @@ body .text-primary,
 
 .social-links a:hover {
     background: var(--primary-color);
+    color: #fff !important;
     transform: translateY(-5px);
     box-shadow: 0 5px 15px var(--primary-glow);
+}
+
+.social-links a:hover i {
+    color: #fff !important;
 }
 
 .typing-text {
@@ -621,7 +626,7 @@ body .text-primary,
 .footer p, .footer a {
     transition: var(--transition-fast);
 }
-.footer a:hover {
+.footer a:not(.social-links a):hover {
     color: var(--primary-color) !important;
 }
 
